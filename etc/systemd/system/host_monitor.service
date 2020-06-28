@@ -1,9 +1,0 @@
-[Unit]
-Description=service_description
-After=network-online.target
-
-[Service]
-#EnvironmentFile=/etc/testparam1.conf
-#Environment="SCRIPT_ARGS=%I"
-ExecStart=/home/darkchaos/Desktop/service/getopts.sh -s
-

@@ -1,0 +1,8 @@
+/var/logs/host_info/monitor.log {
+    hourly
+    missingok
+    rotate 24
+    compress
+    create
+}
+

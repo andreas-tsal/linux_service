@@ -1,0 +1,7 @@
+[Unit]
+Description=info for host
+After=network-online.target
+
+[Service]
+ExecStart=/home/darkchaos/host_info.sh -s
+
