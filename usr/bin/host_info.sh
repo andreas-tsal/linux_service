@@ -1,7 +1,7 @@
 #!/bin/bash
 
 FILE="/home/"$USER""
-FILEB="/var/log/test1/log1.log"
+#FILEB="/var/log/host_info/monitor.log"
 function usage()
 {
 	echo "use -f to specify the file. Your path is 'home/user/[yourfile]'"
@@ -53,6 +53,13 @@ case $param in
 
 	;;
 	s)
+	DIR="/var/log/host_info/"
+	if [ ! -d "$DIR" ]; then
+  		# Take action if not $DIR exists. #
+		mkdir /var/log/host_info
+
+  		echo "created /var/log/host_info directory"
+	fi
 	 commands &>> "/var/log/host_info/monitor.log"
 	;;
 	*)

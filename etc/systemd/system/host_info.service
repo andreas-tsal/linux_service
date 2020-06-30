@@ -3,5 +3,7 @@ Description=info for host
 After=network-online.target
 
 [Service]
-ExecStart=/home/host_info.sh -s
+User=root
+Group=root
+ExecStart=/usr/bin/host_info.sh -s
 

@@ -1,8 +1,7 @@
-/var/logs/host_info/monitor.log {
+/var/log/host_info/monitor.log {
     daily
-    rotate 7
     missingok
-    rotate 24
+    rotate 7
     compress
     create
 }
